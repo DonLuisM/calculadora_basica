@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-shadow: 0;
+}
+
+body {
+    background-color: blueviolet;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: white;
+    padding: 2em 0;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+}
+
+header p {
+    font-size: 1.1em;
+    margin-bottom: 1em;
+}
+
+main {
+    display: inline-block;
+    background: #fff;
+    width: 30%;
+    margin: 1em auto;
+    padding: 2em;
+    border-radius: 10px;
+}
+
+.display_calc {
+    text-align: right;
+    font-size: 1.1em;
+    padding: 0.5em;
+    margin: 1em;
+    margin-bottom: 2em;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+}
+
+.display_calc p {
+    margin-right: 0.5em;
+}
+
+.botones_calc {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.boton_num{
+    padding: 0.8em;
+    font-size: 1.5em;
+    text-align: center;
+    border: none;
+    background-color: #f3f3ff;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+}
+
+.boton_num:hover{
+    background-color: #e6e6ff;
+}
+
+.boton_op, .clear {
+    padding: 0.8em;
+    font-size: 1.5em;
+    text-align: center;
+    border: none;
+    background-color: #f3f3ff;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+}
+
+.boton_op:hover{
+    background-color: #e6e6ff;
+}
+
+.clear:hover{
+    background-color: rgba(255, 0, 0, 0.6);
+}
+
+.boton_result {
+    margin-top: 2em;
+}
+
+.boton_op_equal {
+    padding: 0.8em;
+    width: 100%;
+    font-size: 1.5em;
+    text-align: center;
+    border: none;
+    background-color: #53c00b;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+}
+
+.boton_op_equal:hover{
+    background-color: #48a600;
+}
