@@ -33,19 +33,17 @@ main {
 
 .display_calc {
     text-align: right;
-    font-size: 1.1em;
-    padding: 0.7em;
-    margin: 1em;
-    margin-bottom: 2em;
+    padding: 1.3em;
+    margin: 0.5em;
+    margin-bottom: 1em;
     border: 1px solid #ccc;
     border-radius: 7px;
 }
 
 .display_calc p {
-    margin-right: 0.5em;
     color: black;
     font-weight: 500;
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 
 .botones_calc {
@@ -89,7 +87,7 @@ main {
 }
 
 .boton_result {
-    margin-top: 2em;
+    margin-top: 1.2em;
 }
 
 .boton_op_equal {
@@ -105,5 +103,5 @@ main {
 }
 
 .boton_op_equal:hover{
-    background-color: #48a600;
+    background-color: #439901;
 }
