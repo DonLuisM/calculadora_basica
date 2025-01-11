@@ -5,30 +5,134 @@
 }
 
 body {
-    background-color: #1E1E2F;
     text-align: center;
-    font-family: Arial, sans-serif;
-    color: #FFFFFF;  
+    font-family: Arial, sans-serif; 
     padding: 2em 0;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
 }
 
 header h1 {
     font-size: 2.5em;
     margin-bottom: 1em;
-}
-
-header p {
-    font-size: 1.1em;
-    margin-bottom: 1em;
+    margin-top: 1em;
 }
 
 main {
     display: inline-block;
-    background: #fff;
-    width: 30%;
+    width: 20%;
     margin: 1em auto;
-    padding: 2em;
+    padding: 1.5em;
     border-radius: 10px;
+}
+
+/* * Modificación CSS para adaptación de modos (oscuro y claro). 
+* Se obliga al body aplicar estas estructuras de light y dark  */
+
+/* * Modo claro */
+body.light_mode{
+    background-color: #F1F1F1;
+    color: #333;
+}
+
+.light_mode main {
+    background-color: #ECEEFF;
+    color: #333;
+    border: 2px solid rgba(196, 200, 255, 0.7);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.light_mode .display_calc {
+    border: 1px solid rgb(128, 128, 128);
+}
+
+.light_mode .display_calc p{
+    color: #333;
+}
+
+.light_mode .boton_num, .light_mode .boton_op, .light_mode .clear {
+    background-color: #E6E6FF;
+    color: #000000;
+    border: 1px solid #D1D1D1;
+}
+
+.light_mode .boton_num:hover, .light_mode .boton_op:hover {
+    background-color: #D6D6FF;
+    border: 1px solid #B0B0B0;
+}
+
+.light_mode .clear:hover{
+    background-color: #F77F7F;
+    border: 1px solid #B0B0B0;
+}
+
+.light_mode .light{
+    background-color: #a7a6a6;
+    color: #333;
+}
+
+/* * Modo oscuro */
+body.dark_mode {
+    background-color: #121212;
+    color: #E0E0E0;
+}
+
+.dark_mode main {
+    background-color: #1E1E2F ;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dark_mode .display_calc {
+    border: 1px solid #a8a8a8;
+}
+
+.dark_mode .display_calc p{
+    color: #E0E0E0;
+}
+
+.dark_mode .boton_num, .dark_mode .boton_op, .dark_mode .clear {
+    background-color: #353535;
+    color: #E0E0E0;
+    border: 1px solid #3A3A3A;
+}
+
+.dark_mode .boton_num:hover, .dark_mode .boton_op:hover {
+    background-color: #4A4A4A;
+    border: 1px solid #555555;
+}
+
+.dark_mode .clear:hover{
+    background-color: #FD4B4B;
+}
+
+.dark_mode .dark {
+    background-color: #a7a6a6;
+}
+
+.dark_mode header button {
+    color: white;
+}
+
+.boton_modo {
+    padding: 0.5em 1em;
+    margin: 0.2em;
+    color: black;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: transparent;
+}
+
+.boton_modo:hover {
+    background-color: #cfcfcf;
 }
 
 .display_calc {
@@ -36,14 +140,13 @@ main {
     padding: 1.3em;
     margin: 0.5em;
     margin-bottom: 1em;
-    border: 1px solid #ccc;
     border-radius: 7px;
 }
 
 .display_calc p {
-    color: black;
     font-weight: 500;
-    font-size: 1.5em;
+    font-size: 1.6em;
+    letter-spacing: 2.5px;
 }
 
 .botones_calc {
@@ -57,14 +160,8 @@ main {
     font-size: 1.5em;
     text-align: center;
     border: none;
-    background-color: #f3f3ff;
     border-radius: 5px;
-    color: black;
     cursor: pointer;
-}
-
-.boton_num:hover{
-    background-color: #e6e6ff;
 }
 
 .boton_op, .clear {
@@ -72,18 +169,9 @@ main {
     font-size: 1.5em;
     text-align: center;
     border: none;
-    background-color: #f3f3ff;
     border-radius: 5px;
-    color: black;
+    color: #333;
     cursor: pointer;
-}
-
-.boton_op:hover{
-    background-color: #e6e6ff;
-}
-
-.clear:hover{
-    background-color: rgba(255, 0, 0, 0.6);
 }
 
 .boton_result {
@@ -96,12 +184,12 @@ main {
     font-size: 1.5em;
     text-align: center;
     border: none;
-    background-color: #53c00b;
+    background-color: #43a747;
     border-radius: 5px;
-    color: black;
+    color: #FFF;
     cursor: pointer;
 }
 
 .boton_op_equal:hover{
-    background-color: #439901;
+    background-color: #66BB6A;
 }
