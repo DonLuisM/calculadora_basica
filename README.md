@@ -20,7 +20,7 @@ This project implements a basic calculator using HTML, CSS, and JavaScript. It s
 Here are some screenshots of the calculator in action:
 
 **Light Mode:**  
-<img src="sources/lightMode.png" alt="Calculator Light Mode" style="width:500px;">
+<img src="sources/light_mode.png" alt="Calculator Light Mode" style="width:500px;">
 
 **Dark Mode:**  
-<img src="sources/darkMode.png" alt="Calculator Dark Mode" style="width:500px;">
+<img src="sources/dark_mode.png" alt="Calculator Dark Mode" style="width:500px;">
