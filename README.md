@@ -9,6 +9,7 @@ This project implements a basic calculator using HTML, CSS, and JavaScript. It s
   - Clear screen (AC), Evaluate results (=)
 - Modern design:
   - Light and Dark modes for better visual experience.
+  - Fully responsive design to ensure compatibility with all screen sizes.
 
 ### 🚀 Technologies Used
 - **HTML5**: For the structure of the page.
